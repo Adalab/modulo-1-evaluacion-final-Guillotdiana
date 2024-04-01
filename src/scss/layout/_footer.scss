@@ -16,6 +16,11 @@
     text-align: center;
     padding: 42px 15px 36px;
     gap: 30px;
+
+    @media screen and (width > 767px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
    
     &_ul {
         list-style: none;
