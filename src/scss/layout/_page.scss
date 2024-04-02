@@ -45,16 +45,44 @@
 
     }
 
-
 }
 
 .sectionlook {
     font-family: $font-main;
     padding: 45px 15px 30px;
 
+    @media screen and (width > 767px) {
+        padding: 37px;
+                   
+    }
+
+    @media screen and (width > 1200px) {
+        padding: 60px 275px;
+      
+                   
+    }
+
+    &-h2{
+
+        @media screen and (width > 767px) {
+            font-size: 26px;
+                       
+        }
+
+        @media screen and (width > 1200px) {
+            font-size: 32px;
+                       
+        }
+
+    }
+
 
     &-title {
         color: $azulcla;
+        @media screen and (width > 1200px) {
+            font-size: 16px;
+                       
+        }
     }
 
     &-paragraph {
@@ -62,7 +90,13 @@
         padding-top: 15px;
         padding-right: 15px;
         font-size: 18px;
-        line-height: 1.5
+        line-height: 1.5;
+
+        @media screen and (width > 767px) {
+            font-size: 20px;
+                       
+        }
+
     }
 
     &-button {
@@ -78,6 +112,23 @@
         color: $naranja;
         font-size: 20px;
         font-weight: 500;
+        transition-property: background-color, width;
+        transition-duration: 2s;
+
+
+
+ 
+        @media screen and (width > 767px) {
+            width: 91px;
+            height: 45px;
+                       
+        }
+
+        @media screen and (width > 1200px) {
+            width: 160px;
+            height: 45px;
+                       
+        }
 
     }
 
@@ -86,6 +137,21 @@
 
         background-color: $naranja;
         color: $blanco;
+        width: 120px;
+
+        @media screen and (width > 767px) {
+            width: 170px;
+          
+                       
+        }
+
+        @media screen and (width > 1200px) {
+            width: 220px;
+           
+                       
+        }
+
+        
 
     }
 }
@@ -153,6 +219,8 @@
         background-color: $naranja;
         color: $blanco;        font-size: 20px;
         font-weight: 500;
+        transition-property: background-color, width;
+        transition-duration: 2s;
            
 
     }
@@ -162,6 +230,13 @@
         color: $naranja;
         background-color: $blanco;
         text-align: center;
+        width: 230px;
+
+        @media screen and (width > 767px) {
+            width: 280px;
+        
+            
+        }
         
 
     }

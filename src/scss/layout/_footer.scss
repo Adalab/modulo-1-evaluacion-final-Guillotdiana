@@ -7,6 +7,23 @@
         color: $naranja;
     }
 
+    @media screen and (width > 767px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    
+       
+    }
+
+    @media screen and (width > 1200px) {
+        padding-left: 370px;
+    
+    
+       
+    }
+
+
+
 }
 
 .menu {
@@ -17,9 +34,16 @@
     padding: 42px 15px 36px;
     gap: 30px;
 
-    @media screen and (width > 767px) {
+   @media screen and (width > 767px) {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
+        width: 50vw;
+        align-items: flex-start;
+        gap:100px;
+        line-height: 1.88;
+        text-align: left;
+       
+       
     }
    
     &_ul {
@@ -36,3 +60,29 @@
 
     }
 }
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 36px;
+
+   @media screen and (width > 767px) {
+        padding-top: 52px;
+      
+    }
+
+    &-copy{
+        @media screen and (width > 767px) {
+            width: 100%;
+            padding-bottom: 5px;
+          
+        }
+    }
+
+
+}
+
+
+
+
